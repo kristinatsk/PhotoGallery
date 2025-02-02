@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C12B02382CAB98E400F0CF26 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B02372CAB98E400F0CF26 /* Picture.swift */; };
+		C164A6F32CAA5003000E4489 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164A6F22CAA5003000E4489 /* DetailViewController.swift */; };
 		C1ED61DB2CA9D1B600D23AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED61DA2CA9D1B600D23AAF /* AppDelegate.swift */; };
 		C1ED61DD2CA9D1B600D23AAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED61DC2CA9D1B600D23AAF /* SceneDelegate.swift */; };
 		C1ED61DF2CA9D1B600D23AAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED61DE2CA9D1B600D23AAF /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C12B02372CAB98E400F0CF26 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		C164A6F22CAA5003000E4489 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C1ED61D72CA9D1B600D23AAF /* Milestone Projects 10-12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone Projects 10-12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1ED61DA2CA9D1B600D23AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1ED61DC2CA9D1B600D23AAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				C1ED61DA2CA9D1B600D23AAF /* AppDelegate.swift */,
 				C1ED61DC2CA9D1B600D23AAF /* SceneDelegate.swift */,
 				C1ED61DE2CA9D1B600D23AAF /* ViewController.swift */,
+				C12B02372CAB98E400F0CF26 /* Picture.swift */,
+				C164A6F22CAA5003000E4489 /* DetailViewController.swift */,
 				C1ED61E02CA9D1B600D23AAF /* Main.storyboard */,
 				C1ED61E32CA9D1B800D23AAF /* Assets.xcassets */,
 				C1ED61E52CA9D1B800D23AAF /* LaunchScreen.storyboard */,
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1ED61DF2CA9D1B600D23AAF /* ViewController.swift in Sources */,
+				C12B02382CAB98E400F0CF26 /* Picture.swift in Sources */,
 				C1ED61DB2CA9D1B600D23AAF /* AppDelegate.swift in Sources */,
 				C1ED61DD2CA9D1B600D23AAF /* SceneDelegate.swift in Sources */,
+				C164A6F32CAA5003000E4489 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +300,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5XGCHS5UM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Milestone Projects 10-12/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -319,6 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5XGCHS5UM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Milestone Projects 10-12/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
