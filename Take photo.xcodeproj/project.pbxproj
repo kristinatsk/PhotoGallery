@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		C12B02372CAB98E400F0CF26 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		C164A6F22CAA5003000E4489 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		C1ED61D72CA9D1B600D23AAF /* Milestone Projects 10-12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milestone Projects 10-12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1ED61D72CA9D1B600D23AAF /* Take photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take photo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1ED61DA2CA9D1B600D23AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1ED61DC2CA9D1B600D23AAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C1ED61DE2CA9D1B600D23AAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		C1ED61CE2CA9D1B600D23AAF = {
 			isa = PBXGroup;
 			children = (
-				C1ED61D92CA9D1B600D23AAF /* Milestone Projects 10-12 */,
+				C1ED61D92CA9D1B600D23AAF /* Take photo */,
 				C1ED61D82CA9D1B600D23AAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		C1ED61D82CA9D1B600D23AAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1ED61D72CA9D1B600D23AAF /* Milestone Projects 10-12.app */,
+				C1ED61D72CA9D1B600D23AAF /* Take photo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C1ED61D92CA9D1B600D23AAF /* Milestone Projects 10-12 */ = {
+		C1ED61D92CA9D1B600D23AAF /* Take photo */ = {
 			isa = PBXGroup;
 			children = (
 				C1ED61DA2CA9D1B600D23AAF /* AppDelegate.swift */,
@@ -70,15 +70,15 @@
 				C1ED61E52CA9D1B800D23AAF /* LaunchScreen.storyboard */,
 				C1ED61E82CA9D1B800D23AAF /* Info.plist */,
 			);
-			path = "Milestone Projects 10-12";
+			path = "Take photo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C1ED61D62CA9D1B600D23AAF /* Milestone Projects 10-12 */ = {
+		C1ED61D62CA9D1B600D23AAF /* Take photo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1ED61EB2CA9D1B800D23AAF /* Build configuration list for PBXNativeTarget "Milestone Projects 10-12" */;
+			buildConfigurationList = C1ED61EB2CA9D1B800D23AAF /* Build configuration list for PBXNativeTarget "Take photo" */;
 			buildPhases = (
 				C1ED61D32CA9D1B600D23AAF /* Sources */,
 				C1ED61D42CA9D1B600D23AAF /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "Milestone Projects 10-12";
+			name = "Take photo";
 			productName = "Milestone Projects 10-12";
-			productReference = C1ED61D72CA9D1B600D23AAF /* Milestone Projects 10-12.app */;
+			productReference = C1ED61D72CA9D1B600D23AAF /* Take photo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C1ED61D22CA9D1B600D23AAF /* Build configuration list for PBXProject "Milestone Projects 10-12" */;
+			buildConfigurationList = C1ED61D22CA9D1B600D23AAF /* Build configuration list for PBXProject "Take photo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C1ED61D62CA9D1B600D23AAF /* Milestone Projects 10-12 */,
+				C1ED61D62CA9D1B600D23AAF /* Take photo */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +302,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P5XGCHS5UM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Milestone Projects 10-12/Info.plist";
+				INFOPLIST_FILE = "Take photo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -313,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Milestone-Projects-10-12";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Take-photo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -330,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P5XGCHS5UM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Milestone Projects 10-12/Info.plist";
+				INFOPLIST_FILE = "Take photo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,7 +341,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Milestone-Projects-10-12";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Take-photo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -352,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C1ED61D22CA9D1B600D23AAF /* Build configuration list for PBXProject "Milestone Projects 10-12" */ = {
+		C1ED61D22CA9D1B600D23AAF /* Build configuration list for PBXProject "Take photo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1ED61E92CA9D1B800D23AAF /* Debug */,
@@ -361,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1ED61EB2CA9D1B800D23AAF /* Build configuration list for PBXNativeTarget "Milestone Projects 10-12" */ = {
+		C1ED61EB2CA9D1B800D23AAF /* Build configuration list for PBXNativeTarget "Take photo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1ED61EC2CA9D1B800D23AAF /* Debug */,

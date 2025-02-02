@@ -10,10 +10,18 @@ import UIKit
 class ViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var pictures = [Picture]()
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editTapped))
+        
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(onLongPressGesture(sender:)))
+        longPress.minimumPressDuration = 0.1 // optional
+        tableView.addGestureRecognizer(longPress)
         
         let defaults = UserDefaults.standard
         if let savedPictures = defaults.object(forKey: "pictures") as? Data {
@@ -38,6 +46,36 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
         present(pickerTakePhoto, animated: true)
         
     
+    }
+                                                            
+    @objc func editTapped() {
+        tableView.isEditing = !tableView.isEditing
+        
+    }
+    
+    @objc func onLongPressGesture(sender: UILongPressGestureRecognizer) {
+        
+        let locationInView = sender.location(in: tableView)
+        let indexPath = tableView.indexPathForRow(at: locationInView)
+        
+        if sender.state == .began {
+            if indexPath != nil {
+                let picture = pictures[indexPath?.row ?? 0]
+                let ac = UIAlertController(title: "Rename person", message: nil, preferredStyle: .alert)
+                ac.addTextField()
+
+                ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+
+                ac.addAction(UIAlertAction(title: "OK", style: .default) { [unowned self, ac] _ in
+                    let newName = ac.textFields![0]
+                    picture.name = newName.text!
+
+                    self.tableView.reloadData()
+                })
+            }
+
+           
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -112,6 +150,23 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
         tableView.reloadData()
         
     }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            pictures.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .right)
+        }
+    }
+    
+
 
 //    func submit(_ answer: String) {
 //        let indexPath = IndexPath(row: 0, section: 0)
